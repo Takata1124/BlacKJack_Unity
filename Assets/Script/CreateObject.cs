@@ -7,7 +7,6 @@ public class CreateObject : MonoBehaviour
 {
     [SerializeField]
     GameObject deckitextObj;
-
     Text deckiText;
 
     string afterText = "枚";
@@ -32,6 +31,13 @@ public class CreateObject : MonoBehaviour
     GameObject playerScoreText;
     Text pScoreText;
     int pScore = 0;
+    string preScore = "①: ";
+
+    [SerializeField]
+    GameObject playerScoreText2;
+    Text pScoreText2;
+    int pScore2 = 0;
+    string preScore2 = "②: ";
 
     //enemyScoretext is created;
     [SerializeField]
@@ -54,11 +60,23 @@ public class CreateObject : MonoBehaviour
     [SerializeField]
     GameObject deckObj;
 
+    [SerializeField]
+    GameObject phObj;
+
+    [SerializeField]
+    GameObject phObj2;
+
+    [SerializeField]
+    GameObject ehObj;
+
     GameObject Obj;
     GameObject Obj2;
     GameObject Obj3;
     GameObject Obj4;
     GameObject Obj5;
+    GameObject Obj6;
+    GameObject Obj7;
+    GameObject Obj8;
 
     RectTransform oPos;
     RectTransform oPos2;
@@ -81,6 +99,8 @@ public class CreateObject : MonoBehaviour
     private GameObject playerObj2;
     private GameObject playerObj3;
     private GameObject playerObj4;
+    private GameObject playerObj5;
+    private GameObject playerObj6;
 
     private Image playerImage;
     private Image playerImage2;
@@ -94,6 +114,7 @@ public class CreateObject : MonoBehaviour
 
     int eNumber;
     int pNumber;
+    int pNumber2;
     int iniNumber;
 
     List<int> numbers = new List<int>();
@@ -101,9 +122,15 @@ public class CreateObject : MonoBehaviour
     int eNum;
     int enum1;
     int pNum;
+    int pNum2;
     int pnum;
 
     List<int> nums = new List<int>();
+
+    List<int> numsAA = new List<int>();
+    List<int> numsBB = new List<int>();
+    List<int> numsCC = new List<int>();
+    List<int> numsEE = new List<int>();
 
     bool otransPressed = false;
     bool setPressed = false;
@@ -117,28 +144,47 @@ public class CreateObject : MonoBehaviour
 
     public AudioClip sound01;
     public AudioClip soundOpen;
+
     AudioSource sound;
     AudioSource soundO;
 
     [SerializeField]
     GameObject dealerObj;
+    Button dealerObjB;
 
     [SerializeField]
     GameObject openObj;
-
     Button openObjB;
 
     [SerializeField]
     GameObject passObj;
-
     Button passObjB;
 
     int passN = 1;
 
     [SerializeField]
-    GameObject changeObj;
+    GameObject addPlayerObj;
+    Button addPlayerObjB;
 
-    Button changeObjB;
+    [SerializeField]
+    GameObject addPlayerObj1;
+    Button addPlayerObj1B;
+
+    [SerializeField]
+    GameObject addPlayerObj2;
+    Button addPlayerObj2B;
+
+    [SerializeField]
+    GameObject spliteObj;
+    Button spliteObjB;
+
+    bool splitePressed = false;
+
+    [SerializeField]
+    GameObject switchObj;
+    Button switchObjB;
+
+    bool swithFirst = true;
 
     [SerializeField]
     GameObject lifeTextObj;
@@ -162,24 +208,49 @@ public class CreateObject : MonoBehaviour
 
     int pushNum = 1;
     int iniPushNum;
-    int transNum = 85;
+    int transNum = 75;
+
+    int pushNumP = 0;
 
     int ePushNum = 1;
     int iniEpushNum;
-    int eTransNum = -85;
+    int eTransNum = -75;
+
+    int epushNumP = 0;
 
     int cardNum = 0;
+    int pcardNum = 0;
+    int ecardNum = 0;
 
     GameObject objA;
-    GameObject objX;
-    GameObject objY;
-    GameObject objZ;
-    GameObject objV;
+    RectTransform oPosA;
 
     GameObject pObjA;
+    RectTransform pPosA;
+    Image imageA;
 
-    RectTransform oPosA;
-    Image ImageA;
+    GameObject objB;
+    RectTransform oPosB;
+
+    GameObject pObjB;
+    RectTransform pPosB;
+    Image imageB;
+
+    GameObject objC;
+    RectTransform oPosC;
+
+    GameObject pObjC;
+    RectTransform pPosC;
+    Image imageC;
+
+    GameObject objD;
+    RectTransform oPosD;
+
+    GameObject pObjD;
+    RectTransform pPosD;
+    Image imageD;
+
+    GameObject objZ;
 
     float transPosX;
     float etransPosX;
@@ -188,6 +259,7 @@ public class CreateObject : MonoBehaviour
     bool addEnemyPressed = false;
     bool addPushed = false;
     bool addfirst;
+    bool spliteFirst;
 
     bool score21 = false;
 
@@ -196,16 +268,37 @@ public class CreateObject : MonoBehaviour
     string addressBetting = "ハートをベットしてください";
     string addressSelecting = "進行｢次の行動を選択してください｣";
 
+    int cardNumA;
     int cardNumE;
 
+    int push = 0;
+
+    bool addOne;
+    bool addSecond;
+
+    int pushA = 0;
+    int pushB = 0;
+
+    bool substract = true;
+
+    int listResultAA;
+    int resultAA;
+
+    int listResultBB;
+    int resultBB;
+
+    int listResultCC;
+    int resultCC;
+
+    int listResultEE;
+    int resultEE;
+
+    bool iniGameSetUp;
 
     // Start is called before the first frame update
     void Start()
     {
-        CardSplites();
-
-        IniCreatePlayer();
-        IniCreateEnemy();
+        switchObjB = switchObj.GetComponent<Button>();
 
         deckiText = deckitextObj.GetComponent<Text>();
         scoreText = scoretextObj.GetComponent<Text>();
@@ -220,14 +313,8 @@ public class CreateObject : MonoBehaviour
         pNum = 0;
 
         pScoreText = playerScoreText.GetComponent<Text>();
+        pScoreText2 = playerScoreText2.GetComponent<Text>();
         eScoreText = enemyScoreText.GetComponent<Text>();
-
-        winTextObj.SetActive(false);
-        loseTextObj.SetActive(false);
-        drawtextObj.SetActive(false);
-        bustTextObj.SetActive(false);
-
-        gameOverTextObj.SetActive(false);
 
         openObj.SetActive(false);
         openObjB = openObj.GetComponent<Button>();
@@ -235,11 +322,69 @@ public class CreateObject : MonoBehaviour
         passObjB = passObj.GetComponent<Button>();
         passObjB.interactable = false;
 
-        changeObjB = changeObj.GetComponent<Button>();
-        changeObjB.interactable = false;
+        addPlayerObjB = addPlayerObj.GetComponent<Button>();
+        addPlayerObjB.interactable = false;
+
+        spliteObjB = spliteObj.GetComponent<Button>();
+
+        dealerObjB = dealerObj.GetComponent<Button>();
+        
+        addPlayerObj1B = addPlayerObj1.GetComponent<Button>();
+        addPlayerObj2B = addPlayerObj2.GetComponent<Button>();
 
         sound = GetComponent<AudioSource>();
         soundO = GetComponent<AudioSource>();
+
+        StartSetup();
+
+        CardSplites();
+
+        IniCreatePlayer();
+
+        IniCreateEnemy();
+    }
+
+    void StartSetup()
+    {
+        winTextObj.SetActive(false);
+        loseTextObj.SetActive(false);
+        drawtextObj.SetActive(false);
+        bustTextObj.SetActive(false);
+
+        gameOverTextObj.SetActive(false);
+
+        phObj.SetActive(false);
+        phObj2.SetActive(false);
+
+        ehObj.SetActive(false);
+
+        addPlayerObj.SetActive(true); 
+        addPlayerObj1.SetActive(false);
+        addPlayerObj2.SetActive(false);
+
+        spliteObj.SetActive(true);
+
+        switchObjB.interactable = false;
+
+        splitePressed = false;
+        spliteFirst = true;
+        substract = true;
+        addSecond = false;
+        iniGameSetUp = false;
+
+        push = 0;
+        pushA = 0;
+        pushB = 0;
+
+        numsAA.Clear();
+        numsBB.Clear();
+        numsCC.Clear();
+        numsEE.Clear();
+
+        resultAA = 0;
+        resultBB = 0;
+        resultCC = 0;
+        resultEE = 0;    
     }
 
     // Update is called once per frame
@@ -248,7 +393,17 @@ public class CreateObject : MonoBehaviour
         deckiText.text = totalCards.ToString() + afterText;
         scoreText.text = ScoreText + score.ToString();
         turnText.text = preTurnText + turn.ToString();
-        pScoreText.text = pScore.ToString();
+
+        if (splitePressed)
+        {
+            pScoreText.text = preScore + pScore.ToString();
+        }
+        else
+        {
+            pScoreText.text = pScore.ToString();
+        }
+
+        pScoreText2.text = preScore2 + pScore2.ToString();
         eScoreText.text = eScore.ToString();
 
         betText.text = bet.ToString();
@@ -286,7 +441,10 @@ public class CreateObject : MonoBehaviour
 
     public void GameStartButton()
     {
+        StartSetup();
+
         pScore = 0;
+        pScore2 = 0;
         eScore = 0;
         score21 = false;
 
@@ -301,11 +459,6 @@ public class CreateObject : MonoBehaviour
 
         }
 
-        winTextObj.SetActive(false);
-        loseTextObj.SetActive(false);
-        drawtextObj.SetActive(false);
-        bustTextObj.SetActive(false);
-
         deckObj.SetActive(true);
         deckitextObj.SetActive(true);
 
@@ -319,10 +472,10 @@ public class CreateObject : MonoBehaviour
         checkEScorePressed = false;
 
         pushNum = 1;
-        transNum = 85;
+        transNum = 75;
 
         ePushNum = 1;
-        eTransNum = -85;
+        eTransNum = -75;
 
         checkEScorePressed = false;
 
@@ -343,14 +496,12 @@ public class CreateObject : MonoBehaviour
 
         for(int a = 2; a <= iniPushNum; a++)
         {
-            GameObject objZ = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
             objZ = GameObject.Find("player" + a.ToString());
             Destroy(objZ);
         }
 
         for (int a = 2; a <= iniEpushNum; a++)
         {
-            GameObject objZ = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
             objZ = GameObject.Find("eplayer" + a.ToString());
             Destroy(objZ);
         }
@@ -365,10 +516,6 @@ public class CreateObject : MonoBehaviour
 
         openObj.SetActive(true);
         openObjB.interactable = false;
-
-        winTextObj.SetActive(false);
-        loseTextObj.SetActive(false);
-        drawtextObj.SetActive(false);
 
         Obj4 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
         Obj4.transform.SetParent(card.transform, false);
@@ -420,11 +567,20 @@ public class CreateObject : MonoBehaviour
 
                     CheckENumber();
 
+                    if (eNum == 11 | eNum == 1)
+                    {
+                        numsEE.Add(eNum);
+                    }
+                    else
+                    {
+
+                    }
+
                     enemyObj.SetActive(false);
                     goto default;
 
                 case 1:
-                    enemyObj2 = Instantiate(cardsObject, new Vector3(-85, 500, 0), Quaternion.identity);
+                    enemyObj2 = Instantiate(cardsObject, new Vector3(-75, 500, 0), Quaternion.identity);
                     enemyObj2.transform.SetParent(enemyCard.transform, false);
                     enemyObj2.name = "eplayer" + i.ToString();
 
@@ -440,6 +596,15 @@ public class CreateObject : MonoBehaviour
                     enemyImage2.sprite = cardsprites[cards[eNumber]];
 
                     CheckENumber();
+
+                    if (eNum == 11 | eNum == 1)
+                    {
+                        numsEE.Add(eNum);
+                    }
+                    else
+                    {
+
+                    }
 
                     enemyObj2.SetActive(false);
                     goto default;
@@ -470,7 +635,7 @@ public class CreateObject : MonoBehaviour
         playerObj3.name = "eplayer" + ePushNum.ToString();
 
         pObjA = GameObject.Find("eplayer" + ePushNum.ToString());
-        ImageA = pObjA.GetComponent<Image>();
+        imageA = pObjA.GetComponent<Image>();
 
         eNumber = Random.Range(0, 55);
 
@@ -479,13 +644,29 @@ public class CreateObject : MonoBehaviour
             eNumber = Random.Range(0, 55);
         }
 
-        ImageA.sprite = cardsprites[cards[eNumber]];
+        imageA.sprite = cardsprites[cards[eNumber]];
 
         CheckENumber();
 
+        if (eScore < 11)
+        {
+            if (eNum == 11 | eNum == 1)
+            {
+                numsEE.Add(pNum);
+            }
+            else
+            {
+
+            }
+        }
+        else
+        {
+
+        }
+
         pObjA.SetActive(false);
 
-        etransPosX = etransPosX / 50;
+        etransPosX = etransPosX / 25;
 
         checkEScorePressed = false;
 
@@ -600,11 +781,25 @@ public class CreateObject : MonoBehaviour
 
                     CheckPNumber();
 
+                    if (pNum == 11 | pNum == 1)
+                    {
+                        numsAA.Add(pNum);
+                        numsCC.Add(pNum);
+
+                        int numnum = numsCC.Count;
+                        Debug.Log("numnum" + numnum);
+
+                    }
+                    else
+                    {
+
+                    }
+
                     playerObj.SetActive(false);
                     goto default;
 
                 case 1:
-                    playerObj2 = Instantiate(cardsObject, new Vector3(85, -500, 0), Quaternion.identity);
+                    playerObj2 = Instantiate(cardsObject, new Vector3(75, -500, 0), Quaternion.identity);
                     playerObj2.transform.SetParent(playereCard.transform, false);
                     playerObj2.name = "player" + pnum.ToString();
 
@@ -621,6 +816,22 @@ public class CreateObject : MonoBehaviour
 
                     CheckPNumber();
 
+                    if (pNum == 11 | pNum == 1)
+                    {
+                        numsBB.Add(pNum);
+                        numsCC.Add(pNum);
+
+                        int numnum2 = numsCC.Count;
+                        Debug.Log("numnum2" + numnum2);
+
+                    }
+                    else
+                    {
+
+                    }
+
+                    listResultAA = numsAA.Count;
+
                     playerObj2.SetActive(false);
                     goto default;
 
@@ -632,25 +843,197 @@ public class CreateObject : MonoBehaviour
 
     public void AddPlayer()
     {
-        pushNum = pushNum + 1;
+        if (splitePressed)
+        {
+            iniGameSetUp = false;
+            spliteObjB.interactable = false;
 
+            push = push + 1;
+             
+            pushNum = pushNum + 1 + 2 * (push - 1);
+            pushNumP = pushNum + 1;
+        
+            cardNum = cardNum + 2;
+
+            Obj5 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
+            Obj5.transform.SetParent(card.transform, false);
+            Obj5.name = "pSample " + pushNum.ToString();
+
+            Obj6 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
+            Obj6.transform.SetParent(card.transform, false);
+            Obj6.name = "pSample " + pushNumP.ToString();
+
+            objA = GameObject.Find("pSample " + pushNum.ToString());
+            oPosA = objA.GetComponent<RectTransform>();
+
+            objB = GameObject.Find("pSample " + pushNumP.ToString());
+            oPosB = objB.GetComponent<RectTransform>();
+
+            transPosX = transNum * push;
+
+            playerObj3 = Instantiate(cardsObject, new Vector3(transPosX, -250, 0), Quaternion.identity);
+            playerObj3.transform.SetParent(playereCard.transform, false);
+            playerObj3.name = "player" + pushNum.ToString();
+
+            playerObj4 = Instantiate(cardsObject, new Vector3(transPosX, -500, 0), Quaternion.identity);
+            playerObj4.transform.SetParent(playereCard.transform, false);
+            playerObj4.name = "player" + pushNumP.ToString();
+
+            pObjA = GameObject.Find("player" + pushNum.ToString());
+            pPosA = pObjA.GetComponent<RectTransform>();
+            imageA = pObjA.GetComponent<Image>();
+
+            pObjB = GameObject.Find("player" + pushNumP.ToString());
+            pPosB = pObjB.GetComponent<RectTransform>();
+            imageB = pObjB.GetComponent<Image>();
+
+            pNumber = Random.Range(0, 55);
+            pNumber2 = Random.Range(0, 55);
+
+            while (numbers.Contains(pNumber))
+            {
+                pNumber = Random.Range(0, 55);
+            }
+
+            imageA.sprite = cardsprites[cards[pNumber]];
+
+            while (numbers.Contains(pNumber2) && pNumber == pNumber2)
+            {
+                pNumber2 = Random.Range(0, 55);
+            }
+
+            imageB.sprite = cardsprites[cards[pNumber2]];
+
+            CheckPNumber();
+
+            if (pScore < 11)
+            {
+                if (pNum2 == 11 | pNum2 == 1)
+                {
+                    numsAA.Add(pNum2);
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+
+            }
+
+            if (pScore2 < 11)
+            {
+                if (pNum == 11 | pNum == 1)
+                {
+                    numsBB.Add(pNum);
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+
+            }
+
+            pObjA.SetActive(false);
+            pObjB.SetActive(false);
+
+            transPosX = transPosX / 25;
+
+            plusPressed = true;
+        }
+        else
+        {
+            iniGameSetUp = false;
+            spliteObjB.interactable = false;
+
+            pushNum = pushNum + 1;
+            cardNum = cardNum + 1;
+
+            Obj5 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
+            Obj5.transform.SetParent(card.transform, false);
+            Obj5.name = "pSample " + pushNum.ToString();
+
+            objA = GameObject.Find("pSample " + pushNum.ToString());
+            oPosA = objA.GetComponent<RectTransform>();
+
+            transPosX = transNum * pushNum;
+
+            playerObj3 = Instantiate(cardsObject, new Vector3(transPosX, -500, 0), Quaternion.identity);
+            playerObj3.transform.SetParent(playereCard.transform, false);
+            playerObj3.name = "player" + pushNum.ToString();
+
+            pObjA = GameObject.Find("player" + pushNum.ToString());
+            imageA = pObjA.GetComponent<Image>();
+
+            pNumber = Random.Range(0, 55);
+
+            while (numbers.Contains(pNumber))
+            {
+                pNumber = Random.Range(0, 55);
+            }
+
+            imageA.sprite = cardsprites[cards[pNumber]];
+
+            CheckPNumber();
+
+            if (pScore < 11)
+            {
+                if (pNum == 11 | pNum == 1)
+                {
+                    numsCC.Add(pNum);
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+
+            }
+
+            pObjA.SetActive(false);
+
+            transPosX = transPosX / 25;
+
+            plusPressed = true;
+        }
+    }
+
+    public void Addplayer1()
+    {
+        addOne = true;
+
+        switchObjB.interactable = false;
+
+        int inipush = 1;
+        int pushAA = 0;
+        pushA = pushA + 1;
+        pushAA = inipush + pushA;
+
+        push = push + 1;
+        pushNum = pushNumP + 1 + (push - 2);
         cardNum = cardNum + 1;
 
-        Obj5 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
-        Obj5.transform.SetParent(card.transform, false);
-        Obj5.name = "pSample " + pushNum.ToString();
+        Obj7 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
+        Obj7.transform.SetParent(card.transform, false);
+        Obj7.name = "pSample " + pushNum.ToString();
 
-        objA = GameObject.Find("pSample " + pushNum.ToString());
-        oPosA = objA.GetComponent<RectTransform>();
+        objC = GameObject.Find("pSample " + pushNum.ToString());
+        oPosC = objC.GetComponent<RectTransform>();
 
-        transPosX = transNum * pushNum;
+        transPosX = transNum * pushAA;
 
-        playerObj3 = Instantiate(cardsObject, new Vector3(transPosX, -500, 0), Quaternion.identity);
-        playerObj3.transform.SetParent(playereCard.transform, false);
-        playerObj3.name = "player" + pushNum.ToString();
+        playerObj5 = Instantiate(cardsObject, new Vector3(transPosX, -500, 0), Quaternion.identity);
+        playerObj5.transform.SetParent(playereCard.transform, false);
+        playerObj5.name = "player" + pushNum.ToString();
 
-        pObjA = GameObject.Find("player" + pushNum.ToString());
-        ImageA = pObjA.GetComponent<Image>();
+        pObjC = GameObject.Find("player" + pushNum.ToString());
+        imageC = pObjC.GetComponent<Image>();
 
         pNumber = Random.Range(0, 55);
 
@@ -659,13 +1042,97 @@ public class CreateObject : MonoBehaviour
             pNumber = Random.Range(0, 55);
         }
 
-        ImageA.sprite = cardsprites[cards[pNumber]];
+        imageC.sprite = cardsprites[cards[pNumber]];
 
         CheckPNumber();
 
-        pObjA.SetActive(false);
+        if (pScore < 11)
+        {
+            if (pNum == 11 | pNum == 1)
+            {
+                numsAA.Add(pNum);
+            }
+            else
+            {
 
-        transPosX = transPosX / 50;
+            }
+        }
+        else
+        {
+
+        }
+
+        pObjC.SetActive(false);
+
+        transPosX = transPosX / 25;
+
+        plusPressed = true;
+    }
+
+    public void Addplayer2()
+    {
+        addSecond = true;
+
+        switchObjB.interactable = false;
+
+        int inipush = 1;
+        int pushBB = 0;
+        pushB = pushB + 1;
+        pushBB = inipush + pushB;
+
+        push = push + 1;
+
+        Debug.Log("push = " + push.ToString());
+
+        pushNum = pushNumP + 1 + (push - 2) ;
+        cardNum = cardNum + 1;
+
+        Obj8 = Instantiate(cardsObject, new Vector3(0, 0, 0), Quaternion.identity);
+        Obj8.transform.SetParent(card.transform, false);
+        Obj8.name = "pSample " + pushNum.ToString();
+
+        objD = GameObject.Find("pSample " + pushNum.ToString());
+        oPosD = objD.GetComponent<RectTransform>();
+
+        transPosX = transNum * pushBB;
+
+        playerObj6 = Instantiate(cardsObject, new Vector3(transPosX, -250, 0), Quaternion.identity);
+        playerObj6.transform.SetParent(playereCard.transform, false);
+        playerObj6.name = "player" + pushNum.ToString();
+
+        pObjD = GameObject.Find("player" + pushNum.ToString());
+        imageD = pObjD.GetComponent<Image>();
+
+        pNumber = Random.Range(0, 55);
+
+        while (numbers.Contains(pNumber))
+        {
+            pNumber = Random.Range(0, 55);
+        }
+
+        imageD.sprite = cardsprites[cards[pNumber]];
+
+        CheckPNumber();
+
+        if (pScore2 < 11)
+        {
+            if (pNum == 11 | pNum == 1)
+            {
+                numsBB.Add(pNum);
+            }
+            else
+            {
+
+            }
+        }
+        else
+        {
+
+        }
+
+        pObjD.SetActive(false);
+
+        transPosX = transPosX / 25;
 
         plusPressed = true;
     }
@@ -683,7 +1150,7 @@ public class CreateObject : MonoBehaviour
                 pNum = 1;
             }
         }
-        if (pNumber <= 9)
+        else if (pNumber <= 9)
         {
             pNum = pNumber + 1;
         }
@@ -751,7 +1218,99 @@ public class CreateObject : MonoBehaviour
         numbers.Add(pNumber);
         nums.Add(pNum);
 
+        Debug.Log("pNum = " + pNum.ToString()); ;
+
         iniPushNum = pushNum;
+
+        if (!addOne && !addSecond && splitePressed)
+        {
+            if (pNumber2 == 0)
+            {
+                if (pScore2 < 11)
+                {
+                    pNum2 = 11;
+                }
+                else
+                {
+                    pNum2 = 1;
+                }
+            }
+            else if (pNumber2 <= 9)
+            {
+                pNum2 = pNumber2 + 1;
+            }
+            else if (10 <= pNumber2 && pNumber2 <= 13)
+            {
+                pNum2 = 10;
+            }
+            else if (pNumber2 == 14)
+            {
+                if (pScore2 < 11)
+                {
+                    pNum2 = 11;
+                }
+                else
+                {
+                    pNum2 = 1;
+                }
+            }
+            else if (15 <= pNumber2 && pNumber2 <= 23)
+            {
+                pNum2 = pNumber2 - 13;
+            }
+            else if (24 <= pNumber2 && pNumber2 <= 27)
+            {
+                pNum2 = 10;
+            }
+            else if (pNumber2 == 28)
+            {
+                if (pScore2 < 11)
+                {
+                    pNum2 = 11;
+                }
+                else
+                {
+                    pNum2 = 1;
+                }
+            }
+            else if (29 <= pNumber2 && pNumber2 <= 37)
+            {
+                pNum2 = pNumber2 - 27;
+            }
+            else if (38 <= pNumber2 && pNumber2 <= 41)
+            {
+                pNum2 = 10;
+            }
+            else if (pNumber2 == 42)
+            {
+                if (pScore2 < 11)
+                {
+                    pNum2 = 11;
+                }
+                else
+                {
+                    pNum2 = 1;
+                }
+            }
+            else if (43 <= pNumber2 && pNumber2 <= 51)
+            {
+                pNum2 = pNumber2 - 41;
+            }
+            else
+            {
+                pNum2 = 10;
+            }
+            numbers.Add(pNumber2);
+            nums.Add(pNum2);
+
+            Debug.Log("pNum2 = " + pNum2.ToString());
+
+            iniPushNum = pushNumP;
+        }
+        else
+        {
+
+        }
     }
 
     public void CheckBattleButton()
@@ -767,7 +1326,7 @@ public class CreateObject : MonoBehaviour
             eScore = eScore + nums[3];
 
             Debug.Log("カード枚数は" + cardNum.ToString());
-            Debug.Log(nums[cardNum]);
+            Debug.Log("A" +nums[cardNum].ToString());
         }
         else
         {
@@ -777,7 +1336,7 @@ public class CreateObject : MonoBehaviour
                 addPushed = false;
 
                 Debug.Log("カード枚数は" + cardNum.ToString());
-                Debug.Log(nums[cardNum]);
+                Debug.Log("B" + nums[cardNum].ToString());
             }
             else
             {
@@ -785,22 +1344,29 @@ public class CreateObject : MonoBehaviour
                 eScore = eScore + nums[cardNum];
 
                 Debug.Log("カード枚数は" + cardNum.ToString());
-                Debug.Log(nums[cardNum]);
+                Debug.Log("C" + nums[cardNum].ToString());
             }
         }
 
         checkEScorePressed = true;
-
+        
         //soundO.PlayOneShot(soundOpen);
     }
 
     void EnemyPointCheck()
     {
-        if (checkEScorePressed && !score21 && eScore <= pScore && eScore < 17)
+        if (checkEScorePressed && !score21 && eScore < 17)
         {
-            AddEnemy();
+            if (eScore <= pScore | eScore <= pScore2)
+            {
+                AddEnemy();
+            }
+            else
+            {
+
+            }        
         }
-        else if (checkEScorePressed && score21 && eScore < pScore)
+        else if (checkEScorePressed && score21 && eScore < 21)
         {
             AddEnemy();
         }
@@ -815,25 +1381,25 @@ public class CreateObject : MonoBehaviour
     {
         if (otransPressed && oPos2.localPosition.y < 500)
         {
-            oPos2.localPosition += new Vector3(0, 10.0f, 0);
+            oPos2.localPosition += new Vector3(0, 20.0f, 0);
             AudioSE();
         }
 
         if (otransPressed && oPos2.localPosition.y == 500 && oPos.localPosition.y > -500)
         {
-            oPos.localPosition += new Vector3(0, -10.0f, 0);
+            oPos.localPosition += new Vector3(0, -20.0f, 0);
             AudioSE2();
         }
 
         if (otransPressed && oPos.localPosition.y == -500 && oPos3.localPosition.y < 500)
         {
-            oPos3.localPosition += new Vector3(-1.7f, 10.0f, 0);
+            oPos3.localPosition += new Vector3(-3.4f, 20.0f, 0);
             AudioSE3();
         }
 
         if (otransPressed && oPos3.localPosition.y == 500 && oPos4.localPosition.y > -500)
         {
-            oPos4.localPosition += new Vector3(1.7f, -10.0f, 0);
+            oPos4.localPosition += new Vector3(3.4f, -20.0f, 0);
             AudioSE4();
         }
 
@@ -851,10 +1417,7 @@ public class CreateObject : MonoBehaviour
             pressed03 = true;
             pressed04 = true;
 
-            openObjB.interactable = true;
-
-            passObjB.interactable = true;
-            changeObjB.interactable = true;
+            iniGameSetUp = true;
 
             enemyObj.SetActive(true);
             enemyObj2.SetActive(true);
@@ -866,6 +1429,9 @@ public class CreateObject : MonoBehaviour
             Obj2.SetActive(false);
             Obj4.SetActive(false);
 
+            phObj.SetActive(true);
+            ehObj.SetActive(true);
+
             int cardNumA = cardNum + 1;
             int cardNumB = cardNum + 2;
             int cardNumC = cardNum + 3;
@@ -876,11 +1442,12 @@ public class CreateObject : MonoBehaviour
             {
                 pScore = nums[0] + nums[1];
                 eScore = nums[2];
+
                 cardNum = cardNum + 3;
 
-                Debug.Log(nums[0]);
-                Debug.Log(nums[1]);
-                Debug.Log(nums[2]);
+                Debug.Log("D" + nums[0].ToString());
+                Debug.Log("E" + nums[1].ToString());
+                Debug.Log("F" + nums[2].ToString());
                 Debug.Log("カード枚数は" + cardNum.ToString()) ;
                 
             }
@@ -890,72 +1457,212 @@ public class CreateObject : MonoBehaviour
                 eScore = nums[cardNumC];
                 addfirst = true;
 
-                Debug.Log(nums[cardNumA]);
-                Debug.Log(nums[cardNumB]);
-                Debug.Log(nums[cardNumC]);
+                Debug.Log("G" + nums[cardNumA].ToString());
+                Debug.Log("H" + nums[cardNumB].ToString());
+                Debug.Log("I" + nums[cardNumC].ToString());
 
                 Debug.Log("カード枚数は" + cardNum.ToString());
             }
-
             setPressed = false;
         }
     }
 
     void AddTransObj()
     {
-        if (plusPressed && oPosA.localPosition.y > -500)
-        {   
-            oPosA.localPosition += new Vector3(transPosX, -10.0f, 0);
-            AudioSE();
+        if (!addOne && !addSecond && splitePressed)
+        {
+            if (plusPressed && oPosA.localPosition.y > -500)
+            {
+                oPosA.localPosition += new Vector3(transPosX, -20.0f, 0);
+                addPlayerObjB.interactable = false;
+                AudioSE();
+            }
+            else if (plusPressed && oPosA.localPosition.y == -500 && oPosB.localPosition.y > -250)
+            {
+                oPosB.localPosition += new Vector3(transPosX, -10.0f, 0);
+                addPlayerObjB.interactable = false;
+                AudioSE2();
+            }
+            else if (plusPressed && oPosB.localPosition.y == -250)
+            {
+                if (turn > 1)
+                {
+                    addPushed = true;
+
+                    if (addfirst)
+                    {
+                        cardNum = cardNum + 4;
+                        addfirst = false;
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+
+                }
+
+                pressed01 = true;
+                pressed02 = true;
+
+                Destroy(objA);
+                Destroy(objB);
+                pObjA.SetActive(true);
+                pObjB.SetActive(true);
+
+                cardNumA = cardNum - 1;
+
+                pScore = pScore + nums[cardNum];
+                pScore2 = pScore2 + nums[cardNumA];
+                plusPressed = false;
+
+                switchObjB.interactable = true;
+
+                spliteObj.SetActive(false);
+
+                addPlayerObj.SetActive(false);
+
+                addPlayerObj1.SetActive(true);
+                addPlayerObj2.SetActive(true);
+
+                Debug.Log("カード枚数は" + cardNum.ToString());
+                Debug.Log("J" + cardNumA.ToString());
+                Debug.Log("H" + nums[cardNum].ToString());
+                Debug.Log("I" + nums[cardNumA].ToString());
+            }
+        }
+        else if(!addOne && addSecond && splitePressed)
+        {
+            if (plusPressed && oPosD.localPosition.y > -250)
+            {
+                oPosD.localPosition += new Vector3(transPosX, -10.0f, 0);
+
+                addPlayerObj1B.interactable = false;
+                addPlayerObj2B.interactable = false;
+
+                AudioSE();
+
+                if (plusPressed && oPosD.localPosition.y == -250)
+                {
+                    addPlayerObj1B.interactable = true;
+                    addPlayerObj2B.interactable = true;
+
+                    pressed01 = true;
+
+                    Destroy(objD);
+                    pObjD.SetActive(true);
+
+                    pScore2 = pScore2 + nums[cardNum];
+                    plusPressed = false;
+
+                    pushNum = pushNum + 1;
+
+                    addSecond = false;
+
+                    Debug.Log("カード枚数は" + cardNum.ToString());
+                    Debug.Log("J" + nums[cardNum].ToString());
+                }
+                else
+                {
+
+                }
+
+            }
+        }
+        else if (addOne && !addSecond && splitePressed)
+        {
+            if (plusPressed && oPosC.localPosition.y > -500)
+            {
+                oPosC.localPosition += new Vector3(transPosX, -20.0f, 0);
+
+                addPlayerObj1B.interactable = false;
+                addPlayerObj2B.interactable = false;
+
+                AudioSE();
+
+                if (plusPressed && oPosC.localPosition.y == -500)
+                {
+                    addPlayerObj1B.interactable = true;
+                    addPlayerObj2B.interactable = true;
+
+                    pressed01 = true;
+
+                    Destroy(objC);
+                    pObjC.SetActive(true);
+
+                    pScore = pScore + nums[cardNum];
+                    plusPressed = false;
+
+                    pushNum = pushNum + 1;
+
+                    addOne = false;
+
+                    Debug.Log("カード枚数は" + cardNum.ToString());
+                    Debug.Log("J" + nums[cardNum].ToString());
+                }
+                else
+                {
+
+                }
+
+            }
         }
         else
         {
-
-        }
-
-        if (plusPressed && oPosA.localPosition.y == -500)
-        {
-            if (turn > 1)
+            if (plusPressed && oPosA.localPosition.y > -500)
             {
-                addPushed = true;
+                oPosA.localPosition += new Vector3(transPosX, -20.0f, 0);
+                addPlayerObjB.interactable = false;
+                AudioSE();
 
-                if(addfirst)
+                if (plusPressed && oPosA.localPosition.y == -500)
                 {
-                    cardNum = cardNum + 4;
-                    addfirst = false;
+                    if (turn > 1)
+                    {
+                        addPushed = true;
+
+                        if (addfirst)
+                        {
+                            cardNum = cardNum + 4;
+                            addfirst = false;
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                    else
+                    {
+
+                    }
+               
+                    pressed01 = true;
+
+                    Destroy(objA);
+                    pObjA.SetActive(true);
+                    addPlayerObjB.interactable = true;
+
+                    pScore = pScore + nums[cardNum];
+                    plusPressed = false;
+
+                    Debug.Log("カード枚数は" + cardNum.ToString());
+                    Debug.Log("J" + nums[cardNum].ToString());
                 }
                 else
                 {
 
                 }
             }
-            else
-            {
-
-            }
-
-            pressed01 = true;
-
-            objA.SetActive(false);
-            pObjA.SetActive(true);
-
-            pScore = pScore + nums[cardNum];
-            plusPressed = false;
-
-            Debug.Log("カード枚数は" + cardNum.ToString());
-            Debug.Log(nums[cardNum]);
         }
-        else
-        {
-
-        }    
     }
 
     void AddTransEObj()
     {
         if (addEnemyPressed && oPosA.localPosition.y < 500)
         {
-            oPosA.localPosition += new Vector3(etransPosX, 10.0f, 0);
+            oPosA.localPosition += new Vector3(etransPosX, 20.0f, 0);
             AudioSE();
         }
         else
@@ -967,13 +1674,15 @@ public class CreateObject : MonoBehaviour
         {
             pressed01 = true;
 
-            objA.SetActive(false);
+            Destroy(objA);
             pObjA.SetActive(true);
+
+            ehObj.SetActive(true);
 
             eScore = eScore + nums[cardNum];
 
             Debug.Log("カード枚数は" + cardNum.ToString());
-            Debug.Log(nums[cardNum]);
+            Debug.Log("K" + nums[cardNum].ToString());
 
             addEnemyPressed = false;
 
@@ -1000,17 +1709,33 @@ public class CreateObject : MonoBehaviour
 
     void CheckBetting()
     {
+
         if (bet < 1)
         {
+            dealerObjB.interactable = false;
             openObjB.interactable = false;
-            changeObjB.interactable = false;
+            
             passObjB.interactable = false;
+            spliteObjB.interactable = false;
+
+            addPlayerObjB.interactable = false;
         }
         else
         {
-            openObjB.interactable = true;
-            changeObjB.interactable = true;
-            passObjB.interactable = true;
+            dealerObjB.interactable = true;
+
+            if (iniGameSetUp)
+            {
+                openObjB.interactable = true;
+                passObjB.interactable = true;
+                addPlayerObjB.interactable = true;
+                spliteObjB.interactable = true;
+
+            }
+            else
+            {
+
+            }
         }
     }
 
@@ -1057,20 +1782,7 @@ public class CreateObject : MonoBehaviour
 
     void JudgingScore()
     {
-        if (pScore < 17)
-        {
-            openObjB.interactable = false;
-        }
-        else if (17 <= pScore && pScore <= 21)
-        {
-            openObjB.interactable = true;
-        }
-        else
-        {
-
-        }
-
-        if (pScore == 21)
+        if (pScore == 21 | pScore2 == 21)
         {
             score21 = true;
         }
@@ -1081,25 +1793,188 @@ public class CreateObject : MonoBehaviour
 
         if (pScore > 21)
         {
-            deckitextObj.SetActive(false);
-            deckObj.SetActive(false);
-            graveObj.SetActive(false);
-            bustTextObj.SetActive(true);
+            listResultAA = numsAA.Count - resultAA;
+            listResultCC = numsCC.Count - resultCC;
 
-            changeObjB.interactable = false;
-            openObj.SetActive(false);
-            dealerObj.SetActive(true);
+            Debug.Log("playerAA" + listResultAA.ToString());
+            Debug.Log("playerCC" + listResultCC.ToString());
+
+            if (splitePressed)
+            {
+                if (listResultAA > 0)
+                {
+                    pScore = pScore - 10;
+                    resultAA = resultAA + 1;
+                }
+                else
+                {
+                    deckitextObj.SetActive(false);
+                    deckObj.SetActive(false);
+                    graveObj.SetActive(false);
+                    bustTextObj.SetActive(true);
+
+                    addPlayerObjB.interactable = false;
+                    openObj.SetActive(false);
+                    dealerObj.SetActive(true);
+                }
+            }
+            else
+            {
+                if (listResultCC > 0)
+                {
+                    pScore = pScore - 10;
+                    resultCC = resultCC + 1;
+                    Debug.Log("result");
+                }
+                else
+                {
+                    deckitextObj.SetActive(false);
+                    deckObj.SetActive(false);
+                    graveObj.SetActive(false);
+                    bustTextObj.SetActive(true);
+
+                    addPlayerObjB.interactable = false;
+                    openObj.SetActive(false);
+                    dealerObj.SetActive(true);
+                }
+            }
+        }
+
+        if (pScore2 > 21)
+        {
+            listResultBB = numsBB.Count - resultBB;
+
+            if (splitePressed)
+            {
+                if (listResultBB > 0)
+                {
+                    pScore2 = pScore2 - 10;
+                    resultBB = resultBB + 1;
+                }
+                else
+                {
+                    deckitextObj.SetActive(false);
+                    deckObj.SetActive(false);
+                    graveObj.SetActive(false);
+                    bustTextObj.SetActive(true);
+
+                    addPlayerObjB.interactable = false;
+                    openObj.SetActive(false);
+                    dealerObj.SetActive(true);
+                }
+            }
+            else
+            {
+
+            }
         }
 
         if (eScore > 21)
         {
-            deckitextObj.SetActive(false);
-            deckObj.SetActive(false);
-            graveObj.SetActive(false);
-            bustTextObj.SetActive(true);
-            openObj.SetActive(false);
-            dealerObj.SetActive(true);
+            listResultEE = numsEE.Count - resultEE;
+
+            Debug.Log("enemy" + listResultEE.ToString());
+
+            if (listResultEE > 0)
+            {
+                eScore = eScore - 10;
+                resultEE = resultEE + 1;
+            }
+            else
+            {
+                deckitextObj.SetActive(false);
+                deckObj.SetActive(false);
+                graveObj.SetActive(false);
+
+                bustTextObj.SetActive(true);
+                openObj.SetActive(false);
+                dealerObj.SetActive(true);
+            }
+
         }
+
+        if (pScore == 21)
+        {
+            addPlayerObjB.interactable = false;
+            addPlayerObj1B.interactable = false;
+        }
+
+        if (pScore2 == 21)
+        {
+            addPlayerObj2B.interactable = false;
+        }
+
+        if (splitePressed)
+        {
+            if (eScore >= pScore && eScore >= pScore2 && 17 <= eScore && eScore <= 21)
+            {
+                deckitextObj.SetActive(false);
+                deckObj.SetActive(false);
+                graveObj.SetActive(false);
+
+                openObj.SetActive(false);
+                dealerObj.SetActive(true);
+
+                if (pScore == eScore | pScore2 == eScore)
+                {
+                    drawtextObj.SetActive(true);
+                }
+                else if (pScore > eScore | pScore2 > eScore)
+                {
+                    winTextObj.SetActive(true);
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+
+            }
+        }
+        else
+        {
+            if (pScore == eScore && 17 <= eScore && eScore <= 21)
+            {
+                drawtextObj.SetActive(true);
+
+                deckitextObj.SetActive(false);
+                deckObj.SetActive(false);
+                graveObj.SetActive(false);
+
+                openObj.SetActive(false);
+                dealerObj.SetActive(true);
+            }
+            else if (pScore < eScore && 17 <= eScore && eScore <= 21)
+            {
+                loseTextObj.SetActive(true);
+
+                deckitextObj.SetActive(false);
+                deckObj.SetActive(false);
+                graveObj.SetActive(false);
+
+                openObj.SetActive(false);
+                dealerObj.SetActive(true);
+            }
+            else if (pScore > eScore && 17 <= eScore && eScore <= 21)
+            {
+                winTextObj.SetActive(true);
+
+                deckitextObj.SetActive(false);
+                deckObj.SetActive(false);
+                graveObj.SetActive(false);
+
+                openObj.SetActive(false);
+                dealerObj.SetActive(true);
+            }
+            else
+            {
+
+            }
+
+        }
+
     }
 
     public void PassButton()
@@ -1115,6 +1990,54 @@ public class CreateObject : MonoBehaviour
         passN = passN + 1;
 
         passObjB.interactable = false;
+    }
+
+    public void SpliteButton()
+    {
+        //if (nums[0] == nums[1])
+        //{
+
+        splitePressed = true;
+
+        phObj2.SetActive(true);
+
+        RectTransform pPos = playerObj2.GetComponent<RectTransform>();
+        pPos.localPosition = new Vector3(0f, -250.0f, 0);
+
+        if (turn < 2)
+        {
+            pScore = pScore - nums[1];
+            pScore2 = nums[1];
+
+        }
+        else
+        {
+            int cardNumA = cardNum + 1;
+            int cardNumB = cardNum + 2;
+
+            pScore = pScore - nums[cardNumB];
+            pScore2 = nums[cardNumB];
+        }
+
+        spliteFirst = false;
+       
+        //}
+        //else
+        //{
+
+        //}
+    }
+
+    public void SwitchButton()
+    {
+
+        pPosA.localPosition = new Vector3(75, -500, 0);
+        pPosB.localPosition = new Vector3(75, -250, 0);
+
+        pScore = pScore - nums[cardNum] + nums[cardNumA];
+        pScore2 = pScore2 - nums[cardNumA] + nums[cardNum];
+
+        switchObjB.interactable = false;
     }
 
     void AudioSE()

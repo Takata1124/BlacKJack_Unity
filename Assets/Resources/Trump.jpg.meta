@@ -1,0 +1,1590 @@
+fileFormatVersion: 2
+guid: 9b8c4075d64b26b46a914a8997865aa2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2799419466870435403
+    second: gazou022-449x1024_0
+  - first:
+      213: -9183834836491992372
+    second: gazou022-449x1024_1
+  - first:
+      213: 5206108676807762576
+    second: gazou022-449x1024_2
+  - first:
+      213: 9077606180468616020
+    second: gazou022-449x1024_3
+  - first:
+      213: 5049033298647122662
+    second: gazou022-449x1024_4
+  - first:
+      213: 8557046541699120159
+    second: gazou022-449x1024_5
+  - first:
+      213: 8373635151655559279
+    second: gazou022-449x1024_6
+  - first:
+      213: -6707563888182689540
+    second: gazou022-449x1024_7
+  - first:
+      213: 1455025553838274316
+    second: gazou022-449x1024_8
+  - first:
+      213: -8999617465001001091
+    second: gazou022-449x1024_9
+  - first:
+      213: -671205341686124033
+    second: gazou022-449x1024_10
+  - first:
+      213: -3501294472168242126
+    second: gazou022-449x1024_11
+  - first:
+      213: 7747818664879295310
+    second: gazou022-449x1024_12
+  - first:
+      213: -6158345410987666383
+    second: gazou022-449x1024_13
+  - first:
+      213: 3491514170158443323
+    second: gazou022-449x1024_14
+  - first:
+      213: -8262118561591708889
+    second: gazou022-449x1024_15
+  - first:
+      213: 163894187500435602
+    second: gazou022-449x1024_16
+  - first:
+      213: -7362763771116778371
+    second: gazou022-449x1024_17
+  - first:
+      213: 5876300463496341872
+    second: gazou022-449x1024_18
+  - first:
+      213: 1937986710835114410
+    second: gazou022-449x1024_19
+  - first:
+      213: 2046344158313689552
+    second: gazou022-449x1024_20
+  - first:
+      213: -7840401772930996359
+    second: gazou022-449x1024_21
+  - first:
+      213: 3584896443841803042
+    second: gazou022-449x1024_22
+  - first:
+      213: -1908560661884186329
+    second: gazou022-449x1024_23
+  - first:
+      213: -8714347083677552753
+    second: gazou022-449x1024_24
+  - first:
+      213: 8975347902145932522
+    second: gazou022-449x1024_25
+  - first:
+      213: 4287649055387239903
+    second: gazou022-449x1024_26
+  - first:
+      213: -2122977058606575810
+    second: gazou022-449x1024_27
+  - first:
+      213: -6776315774849454305
+    second: gazou022-449x1024_28
+  - first:
+      213: 8516764991952877115
+    second: gazou022-449x1024_29
+  - first:
+      213: -9008289400282629615
+    second: gazou022-449x1024_30
+  - first:
+      213: -3436540226875542914
+    second: gazou022-449x1024_31
+  - first:
+      213: 4119246316151158772
+    second: gazou022-449x1024_32
+  - first:
+      213: 807048902089115516
+    second: gazou022-449x1024_33
+  - first:
+      213: 3626316431239018252
+    second: gazou022-449x1024_34
+  - first:
+      213: 5322590805247622313
+    second: gazou022-449x1024_35
+  - first:
+      213: -5416164543074958276
+    second: gazou022-449x1024_36
+  - first:
+      213: -2379789507610093993
+    second: gazou022-449x1024_37
+  - first:
+      213: -1197749785431534773
+    second: gazou022-449x1024_38
+  - first:
+      213: -5584060699047672432
+    second: gazou022-449x1024_39
+  - first:
+      213: 3035519710095977329
+    second: gazou022-449x1024_40
+  - first:
+      213: -971380429925161064
+    second: gazou022-449x1024_41
+  - first:
+      213: 8256666783240066201
+    second: Trump_0
+  - first:
+      213: -9010212065284868291
+    second: Trump_1
+  - first:
+      213: 315708711948621751
+    second: Trump_2
+  - first:
+      213: -7954168993772889563
+    second: Trump_3
+  - first:
+      213: 6990877402556594649
+    second: Trump_4
+  - first:
+      213: -662688531404556000
+    second: Trump_5
+  - first:
+      213: -4891020225851651764
+    second: Trump_6
+  - first:
+      213: -58841317863904895
+    second: Trump_7
+  - first:
+      213: 8209160515972159588
+    second: Trump_8
+  - first:
+      213: 758712878075315285
+    second: Trump_9
+  - first:
+      213: 3492314242820917360
+    second: Trump_10
+  - first:
+      213: -1949153830586294734
+    second: Trump_11
+  - first:
+      213: 283186489396453403
+    second: Trump_12
+  - first:
+      213: 8358005852154150671
+    second: Trump_13
+  - first:
+      213: 6860339893251390116
+    second: Trump_14
+  - first:
+      213: -5359515591750084949
+    second: Trump_15
+  - first:
+      213: 262370048028488367
+    second: Trump_16
+  - first:
+      213: 1106405370596821996
+    second: Trump_17
+  - first:
+      213: 8799047929899874578
+    second: Trump_18
+  - first:
+      213: 7788656956484658888
+    second: Trump_19
+  - first:
+      213: -3553725752488989661
+    second: Trump_20
+  - first:
+      213: -5622814557467022189
+    second: Trump_21
+  - first:
+      213: -7961248548898496505
+    second: Trump_22
+  - first:
+      213: -7657383735492670884
+    second: Trump_23
+  - first:
+      213: -1065482039840158978
+    second: Trump_24
+  - first:
+      213: -9185646379838190211
+    second: Trump_25
+  - first:
+      213: 8747601345934272699
+    second: Trump_26
+  - first:
+      213: 1439800750900460557
+    second: Trump_27
+  - first:
+      213: -925026783024165112
+    second: Trump_28
+  - first:
+      213: 7996322111652037910
+    second: Trump_29
+  - first:
+      213: -2267763330431836418
+    second: Trump_30
+  - first:
+      213: -7490522778356029661
+    second: Trump_31
+  - first:
+      213: 8457751649846270174
+    second: Trump_32
+  - first:
+      213: -1280740053922997771
+    second: Trump_33
+  - first:
+      213: -9022144474916360414
+    second: Trump_34
+  - first:
+      213: -2801963045318534546
+    second: Trump_35
+  - first:
+      213: 8926603887861040435
+    second: Trump_36
+  - first:
+      213: -2549261930524171969
+    second: Trump_37
+  - first:
+      213: 2652882173164311856
+    second: Trump_38
+  - first:
+      213: 3653837684392505394
+    second: Trump_39
+  - first:
+      213: -3442827701035757982
+    second: Trump_40
+  - first:
+      213: -2506770668444291226
+    second: Trump_41
+  - first:
+      213: 6573943122083378837
+    second: Trump_42
+  - first:
+      213: 8002617864442072190
+    second: Trump_43
+  - first:
+      213: -2875372470261594957
+    second: Trump_44
+  - first:
+      213: 5802292229799428774
+    second: Trump_45
+  - first:
+      213: -7888355369045717747
+    second: Trump_46
+  - first:
+      213: -6677187184579567415
+    second: Trump_47
+  - first:
+      213: -2492989337068392802
+    second: Trump_48
+  - first:
+      213: 2694245441453846239
+    second: Trump_49
+  - first:
+      213: 2657574937234226609
+    second: Trump_50
+  - first:
+      213: -5204832802912144314
+    second: Trump_51
+  - first:
+      213: -8563920147069145398
+    second: Trump_52
+  - first:
+      213: -2656992397451615167
+    second: Trump_53
+  - first:
+      213: 1796174976199722681
+    second: Trump_54
+  - first:
+      213: -6140986410837810493
+    second: Trump_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9949ac391b2959270800000000000000
+      internalID: 8256666783240066201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37b1c16ddb45f280800000000000000
+      internalID: -9010212065284868291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7913c966f916400800000000000000
+      internalID: 315708711948621751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a9db2717d1d9190800000000000000
+      internalID: -7954168993772889563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9f0b755f5940160800000000000000
+      internalID: 6990877402556594649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029f7e0ba48adc6f0800000000000000
+      internalID: -662688531404556000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c498cd0b40b9f1cb0800000000000000
+      internalID: -4891020225851651764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1892b961224fe2ff0800000000000000
+      internalID: -58841317863904895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468deaacefbcce170800000000000000
+      internalID: 8209160515972159588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5548130c75d778a00800000000000000
+      internalID: 758712878075315285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078c06ffc41377030800000000000000
+      internalID: 3492314242820917360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_11
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23edf4b0be633f4e0800000000000000
+      internalID: -1949153830586294734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_12
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b106aa99c941ee300800000000000000
+      internalID: 283186489396453403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_13
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 336.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fb8483a0a9df370800000000000000
+      internalID: 8358005852154150671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aab0b709c2d43f50800000000000000
+      internalID: 6860339893251390116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6919917fc2f95b0800000000000000
+      internalID: -5359515591750084949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2b0782b2024a300800000000000000
+      internalID: 262370048028488367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_17
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb020492ddba5f00800000000000000
+      internalID: 1106405370596821996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_18
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219715f097f7c1a70800000000000000
+      internalID: 8799047929899874578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_19
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6a4a06c3ed61c60800000000000000
+      internalID: 7788656956484658888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_20
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c6cbda141aeaec0800000000000000
+      internalID: -3553725752488989661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_21
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c684073ffb7f1b0800000000000000
+      internalID: -5622814557467022189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_22
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700af4210a6f38190800000000000000
+      internalID: -7961248548898496505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_23
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a0b1920128bb590800000000000000
+      internalID: -7657383735492670884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_24
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efac4ccdab5a631f0800000000000000
+      internalID: -1065482039840158978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_25
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d44610947068080800000000000000
+      internalID: -9185646379838190211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_26
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8242dc319b56970800000000000000
+      internalID: 8747601345934272699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_27
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 224.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c33c097233bf310800000000000000
+      internalID: 1439800750900460557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f4f16ba05a923f0800000000000000
+      internalID: -925026783024165112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6150f9e1894a8fe60800000000000000
+      internalID: 7996322111652037910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_30
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe14fe14494780e0800000000000000
+      internalID: -2267763330431836418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_31
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327ed1638315c0890800000000000000
+      internalID: -7490522778356029661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_32
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed89f8f7058ff5570800000000000000
+      internalID: 8457751649846270174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_33
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f91e44e4b5e93ee0800000000000000
+      internalID: -1280740053922997771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_34
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f6b54c667eac280800000000000000
+      internalID: -9022144474916360414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_35
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a540aa47d6d19d0800000000000000
+      internalID: -2801963045318534546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_36
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335049ad0faa1eb70800000000000000
+      internalID: 8926603887861040435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_37
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f312eafd7c33f9cd0800000000000000
+      internalID: -2549261930524171969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_38
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035dc6ae74ee0d420800000000000000
+      internalID: 2652882173164311856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_39
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230b62dd30a05b230800000000000000
+      internalID: 3653837684392505394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_40
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e83e0627e9830d0800000000000000
+      internalID: -3442827701035757982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_41
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 112.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f6206cb59263dd0800000000000000
+      internalID: -2506770668444291226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596f66570765b3b50800000000000000
+      internalID: 6573943122083378837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_43
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cc34b4c820f0f60800000000000000
+      internalID: 8002617864442072190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_44
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4ce1109ff9818d0800000000000000
+      internalID: -2875372470261594957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_45
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a244388a02e58050800000000000000
+      internalID: 5802292229799428774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_46
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d0cfd069ee68290800000000000000
+      internalID: -7888355369045717747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_47
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0285402add553a0800000000000000
+      internalID: -6677187184579567415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_48
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ea337086f176dd0800000000000000
+      internalID: -2492989337068392802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_49
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde629b44f1e36520800000000000000
+      internalID: 2694245441453846239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_50
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdb3d1335a91e420800000000000000
+      internalID: 2657574937234226609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_51
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644fe136428b4c7b0800000000000000
+      internalID: -5204832802912144314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_52
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acee125fff7d62980800000000000000
+      internalID: -8563920147069145398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_53
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144abfaed77702bd0800000000000000
+      internalID: -2656992397451615167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_54
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b684d2df9b4de810800000000000000
+      internalID: 1796174976199722681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trump_55
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0.75
+        width: 73.14286
+        height: 112.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2e28b4565d6caa0800000000000000
+      internalID: -6140986410837810493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
